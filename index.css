@@ -27,9 +27,10 @@ h2 {
   border: solid black 2px
 }
 
-.button {
-  padding:15px 15px;
-  border-radius: 8%;
-  font-size: 20px;
-  background: firebrick;
+.cross {
+  background-color: blue;
+}
+
+.nought {
+  background-color: red;
 }
