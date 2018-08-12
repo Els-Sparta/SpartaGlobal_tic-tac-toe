@@ -47,17 +47,16 @@ $(function(event){
       //check if the turn is 5, because that is the minumum required turns taken for someone to win
       if (turn >= 4){
         winningCondition(playerCross, winningConditions);
-        winningCondition(playerNought, winningConditions);
         if (winningCondition(playerCross, winningConditions)) {
           console.log("playerCross wins");
         }
+        winningCondition(playerNought, winningConditions);
         if (winningCondition(playerNought, winningConditions)){
           console.log("playerNought wins");
         }
       }
       //call for stalemate
       checkStalemate();
-
     }
   })
   //the function to determined the winning condition with a player and a winning condiditon
@@ -67,7 +66,7 @@ $(function(event){
       //add a counter/increment for each correct element within array
       var increment = 0;
       //loop over each individual array within the winning condition
-      for (var j = 0; j < threeInARow[i].length; j++) {
+      for (var j = 0; j < (threeInARow[i]).length; j++) {
         //if the value of that element is not equal to -1
         //Checking if j(current value of players move) is a subset of i(a winning condition)
         if(threeInARow[i].indexOf(player[j]) !== -1){
@@ -91,39 +90,4 @@ $(function(event){
       console.log("nobody wins");
     }
   }
-
-
 })
-
-    // function playerWins(playerCross){
-    //   return winningCondition.some(function(threeInARow){
-    //     return threeInARow.every(function (square){
-    //       return board[square] === playerCross;
-    //
-    //     });
-    //   });
-    //
-    //   var xWins = playerWins('X')
-    // }
-
-    // function winningCondition(){
-    //
-    // }
-    //
-    // if (turn >= minWinningTurn) {
-    //   check winningCondition();
-    // }
-
-
-
-// function winner(a1, a2, a3){
-//   var s = winnerString;
-//
-// }
-
-  // $(squares).on("click", function(index, square){
-  //   console.log(square);
-  // })
-
-
-  // })

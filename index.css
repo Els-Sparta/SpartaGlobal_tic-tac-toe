@@ -5,17 +5,18 @@ body {
 h1 {
   font-size: 40px;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 h2 {
   font-size: 30px;
-  margin-top: 60px;
   text-align: center;
 }
 
-.container {
+.container-fluid {
+  margin:auto;
+  margin-bottom: 50px;
   width: 347px;
-  margin: auto;
   border: solid black 4px;
   border-radius: 10px;
 }
@@ -24,13 +25,18 @@ h2 {
   height: 113px;
   width: 113px;
   display: inline-block;
-  border: solid black 2px
+  border: solid black 2px;
+
 }
 
 .cross {
   background-color: blue;
+  font-size: 85px;
+  text-align: center;
 }
 
 .nought {
   background-color: red;
+  font-size: 85px;
+  text-align: center;
 }
