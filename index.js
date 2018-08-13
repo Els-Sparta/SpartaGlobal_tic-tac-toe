@@ -49,10 +49,12 @@ $(function(event){
         winningCondition(playerCross, winningConditions);
         if (winningCondition(playerCross, winningConditions)) {
           console.log("playerCross wins");
+          reset();
         }
         winningCondition(playerNought, winningConditions);
         if (winningCondition(playerNought, winningConditions)){
           console.log("playerNought wins");
+          reset();
         }
       }
       //call for stalemate
@@ -89,5 +91,11 @@ $(function(event){
       //log nobody wins
       console.log("nobody wins");
     }
+  }
+
+$("#reset").on("click",reset)
+  function reset(){
+    location.reload()
+
   }
 })

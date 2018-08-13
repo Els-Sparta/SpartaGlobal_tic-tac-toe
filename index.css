@@ -40,3 +40,10 @@ h2 {
   font-size: 85px;
   text-align: center;
 }
+.myButton {
+  padding:15px 15px;
+  border-radius: 8%;
+  font-size: 20px;
+  background: firebrick;
+  position: relative;
+}
